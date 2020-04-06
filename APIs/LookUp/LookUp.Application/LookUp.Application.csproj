@@ -4,4 +4,11 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Command" />
+      <Folder Include="Data" />
+      <Folder Include="Domain" />
+      <Folder Include="Interface" />
+    </ItemGroup>
+
 </Project>

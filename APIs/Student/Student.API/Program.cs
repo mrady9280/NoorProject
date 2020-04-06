@@ -23,7 +23,6 @@ namespace Student.API
                     var configuration = cb.Build();
                     var url = configuration.GetSection("Consul").GetSection("Url").Value;
                     var path = configuration.GetSection("Consul").GetSection("Path").Value;
-
                     cb.AddConsul(new[] {url}, path);
                 })
                 .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); });
